@@ -54,8 +54,14 @@ the following:
 
 This will create `my_node.svg` in the current directory.
 
+To see which functions a certain module calls run:
+
+    Eshell V5.7.5  (abort with ^G)
+    1> grapherl:applications("/path/to/my_mod.beam", "my_mod", [{type, svg}]).
+    ok
+
 Tips
----
+----
 
 If you're using Gnome under Linux, use the option `{open,
 "gnome-open"}` to directly see the resulting image.
